@@ -20,7 +20,7 @@ SER.send('and rebooting the system. (Note RS232 down is > 3Volt)\r\n\r\n')
 #Init the HW WD
 time.sleep(1)        
 SER.send('Waiting for module to be fully operational\r\n')
-time.sleep(10)          # wait for the module to be fully operational
+time.sleep(20)          # wait for the module to be fully operational
 
 SER.send('Enable the Watch Dog\r\n')
 GPIO.setIOdir(8, 1, 1)  # GPIO8 in the HX910 unit is used for HW WD
